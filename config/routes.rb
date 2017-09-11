@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :posts
+  resources :hearts, only: :create
 
   root 'pages#home'
   get 'about' => 'pages#about' # When one goes to '/about' url, render 'about' action in 'pages' controller
