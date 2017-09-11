@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-
-  get 'pages/about'
+  root 'pages#home'
+  get 'about' => 'pages#about' # When one goes to '/about' url, render 'about' action in 'pages' controller
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
