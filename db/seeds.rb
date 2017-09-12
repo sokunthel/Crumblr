@@ -44,7 +44,7 @@ Source: http://www.simplyrecipes.com/recipes/blondies/
 CONTENT
 post1.save
 13.times do
-  post1.hearts.create
+  post1.heart.create
 end
 
 post2 = Post.new(
@@ -59,14 +59,14 @@ So, whether you’re out for your morning coffee and croissant, or after the cla
 http://www.lafarine.com/
 CONTENT
 post2.save
-27.times {post2.hearts.create}
+27.times {post2.heart.create}
 
 post3 = Post.create(
   title: "Chocolate Chip Goodness",
   kind: "image",
   content: "http://www.simplyrecipes.com/wp-content/uploads/2017/05/2017-06-13-ChocolateChipCookies-15.jpg"
 )
-7.times {post3.hearts.create}
+7.times {post3.heart.create}
 
 post4 = Post.new(
   title: "Swedish Cream Bun Cake",
@@ -96,7 +96,7 @@ Swedish Cream Bun Cake Recipe Ingredients
 Source: http://thewhoot.com.au/whoot-news/recipes/swedish-cream-bun-cake
 CONTENT
 post4.save
-3.times {post4.hearts.create}
+3.times {post4.heart.create}
 
 post5 = Post.create(
   title: "Delicious Fruit Tart",
@@ -104,4 +104,4 @@ post5 = Post.create(
   content: "https://s3-media3.fl.yelpcdn.com/bphoto/Q9IOIOP2Tt_4wR1_6_mE-w/o.jpg"
 )
 post5.save
-18.times {post5.hearts.create}
+18.times {post5.heart.create}
