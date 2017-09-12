@@ -62,14 +62,14 @@ post2.save
 27.times {post2.hearts.create}
 
 post3 = Post.create(
-  title: "Chocolate Chip Goodness"
-  kind: "image"
+  title: "Chocolate Chip Goodness",
+  kind: "image",
   content: "http://www.simplyrecipes.com/wp-content/uploads/2017/05/2017-06-13-ChocolateChipCookies-15.jpg"
 )
 7.times {post3.hearts.create}
 
 post4 = Post.new(
-  title: "Swedish Cream Bun Cake"
+  title: "Swedish Cream Bun Cake",
   kind: "text"
 )
 post4.content = <<CONTENT
@@ -99,8 +99,8 @@ post4.save
 3.times {post4.hearts.create}
 
 post5 = Post.create(
-  title: "Delicious Fruit Tart"
-  kind: "image"
+  title: "Delicious Fruit Tart",
+  kind: "image",
   content: "https://s3-media3.fl.yelpcdn.com/bphoto/Q9IOIOP2Tt_4wR1_6_mE-w/o.jpg"
 )
 post5.save
