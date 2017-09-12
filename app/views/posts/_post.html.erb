@@ -20,5 +20,5 @@
 </p>
 <p class="text-muted">
   <small>Posted on <%= post.created_at.to_formatted_s(:long) %></small>
-  <small class="pull-right"><%= post.heart.count %> hearts</small>
+  <small class="pull-right"><%= pluralize(post.heart.count, "heart") %></small>
 </p>

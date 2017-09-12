@@ -12,11 +12,11 @@
   <div class="container">
     <section class="page-header">
       <ul class="nav nav-pills pull-right">
-        <li role="presentation"><%= link_to 'Home', root_url %></li>
-        <li role="presentation"><%= link_to 'Manage Posts', posts_url %></li>
-        <li role="presentation"><%= link_to 'About', about_url %></li>
+        <li role="presentation" class="<%= active_class(root_url) %>"><%= link_to 'Home', root_url %></li>
+        <li role="presentation" class="<%= active_class(posts_url) %>"><%= link_to 'Manage Posts', posts_url %></li>
+        <li role="presentation" class="<%= active_class(about_url) %>"><%= link_to 'About', about_url %></li>
       </ul>
-      <h1>Crumblr</h1>
+      <h1><%= link_to 'Crumblr', root_url %></h1>
     </section>
 
     <div class="row">
